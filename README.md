@@ -39,10 +39,13 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-### 3. Download the spaCy English model
+This also installs the `en_core_web_sm` language model required by the
+application, including when deployed to Render.
+
+### 3. (Optional) Verify the spaCy installation
 
 ```powershell
-python -m spacy download en_core_web_sm
+python -m spacy validate
 ```
 
 If you have a finance-specific spaCy model, you can edit
